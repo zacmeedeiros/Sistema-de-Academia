@@ -1,18 +1,22 @@
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Treino {
-    private Date horario;
+
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+
+    private String horario;
     private String atividade;
 
-    public Treino(Date horario, String atividade) {
+    public Treino(String horario, String atividade) {
         this.horario = horario;
         this.atividade = atividade;
     }
 
-    public Date getHorario() {
+    public String getHorario() {
         return horario;
     }
-    public void setHorario(Date horario) {
+    public void setHorario(String horario) {
         this.horario = horario;
     }
 
