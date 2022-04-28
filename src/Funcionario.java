@@ -1,12 +1,12 @@
 public class Funcionario {
 
     private int matricula;
-    private String nome;
+    private String name;
 
     public Funcionario(){
     }
     public Funcionario(int matricula, String nome) {
         this.matricula = matricula;
-        this.nome = nome;
+        this.name = nome;
     }
 }

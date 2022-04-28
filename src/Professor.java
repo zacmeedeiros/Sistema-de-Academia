@@ -18,4 +18,21 @@ public class Professor extends Funcionario{
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+    public void addAluno (Aluno aluno){
+        list.add(aluno);
+    }
+    public void removeAluno(Aluno aluno){
+        list.remove(aluno);
+    }
+
+    public String toString() {
+        return "Professor [" +
+                name +
+                + ", $"
+                + String.format("%.2f", price)
+                + ", Quantity: "
+                + quantity +
+                ", Subtotal: $"
+                + String.format("%.2f", subTotal());
+    }
 }
